@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkgray;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.card button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#withdraw {
+  background-color: rgb(16, 199, 16);
+}
+
+#withdraw:hover {
+  background-color: rgb(19, 221, 19);
+}
+
+#deposit {
+  background-color: red;
+}
+#deposit:hover {
+  background-color: rgb(220, 5, 5);
+}
+
+p {
+  font-size: 1.8em;
+  font: bold;
+  color: rgb(16, 199, 16);
+}

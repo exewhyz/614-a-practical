@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: white;
+  --primary-color-foreground: black;
+  --secondary-color: #000;
+  --secondary-color-foreground: white;
+  --sidebar-color: gainsboro;
+  --navbar-color: rgb(56, 236, 56);
+  --footer-color: rgb(56, 236, 56);
+  --text-color: white;
+}
+.dark {
+  --primary-color: black;
+  --primary-color-foreground: white;
+  --secondary-color: white;
+  --secondary-color-foreground: black;
+  --sidebar-color: rgb(42, 41, 41);
+  --navbar-color: rgb(66, 65, 65);
+  --footer-color: rgb(66, 65, 65);
+  --text-color: white;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-color);
+  color: var(--primary-color-foreground);
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-areas:
+    "nav nav"
+    "sidebar main"
+    "footer footer";
+}
+
+#navbar {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  background-color: var(--navbar-color);
+  color: var(--text-color);
+}
+
+#sidebar {
+  grid-area: sidebar;
+  padding: 1.2em 2em;
+  font-size: 1.2em;
+  background-color: var(--sidebar-color);
+}
+
+#main {
+  grid-area: main;
+  padding: 1.2em 1.5em;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  background-color: var(--footer-color);
+  color: var(--text-color);
+  font-size: 1.2em;
+}

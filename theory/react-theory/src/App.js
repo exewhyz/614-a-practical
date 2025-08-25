@@ -1,11 +1,20 @@
-import './App.css';
+// function App(){
+//   return (
+//     <h1>Hello from App Component</h1>
+//   )
+// }
 
-function App() {
+// export default App;
+
+
+
+
+export const App = (props)=>{
   return (
     <div>
-      hellooooooooooooooo
+      hello {props.email}
     </div>
-  );
+  )
 }
 
-export default App;
+// export {App};

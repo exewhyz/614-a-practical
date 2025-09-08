@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/exewhyzed/614-a-practical/tree/main/experiment7).
+This project was bootstrapped with [Create React App](https://github.com/exewhyz/614-a-practical/tree/main/experiment7).
 
 ## Available Scripts
 

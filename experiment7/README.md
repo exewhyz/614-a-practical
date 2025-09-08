@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with 07: Products List
 
 This project Link [07: Products List](https://github.com/exewhyz/614-a-practical/tree/main/experiment7).
 
